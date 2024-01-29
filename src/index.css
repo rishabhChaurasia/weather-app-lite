@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.weatherApp {
+  background: url(./assets/SvgFirst.svg), url(./assets/BlurFirst.svg),
+    url(./assets/SvgSecond.svg), url(./assets/SvgThird.svg) center right,
+    url(./assets/BlurThird.svg) top right,
+    url(./assets/SvgFourth.svg) bottom left,
+    url(./assets/BlurSecond.svg) bottom left,
+    url(./assets/SvgFifth.svg) top right,
+    url(./assets/BlurFourth.svg) center right;
+  background-repeat: no-repeat;
+}
+
+.gradient {
+  background: linear-gradient(91deg, #caecff 39.76%, #78cfff 86.12%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.inputFormSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 3.7 rem;
+  border-radius: 12px;
+  background: #24343d;
+}
+
+.inputFormSearch svg {
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-top: 6px;
+  color: #a4acb1;
+}
+
+.inputForm .inputFormSearch input {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #e7e4e4;
+  margin-top: 1px;
+  padding: 0 20px;
+  width: 12rem;
+  font-size: 1rem;
+}
+
+.inputForm .inputFormSearch input::placeholder {
+  font-size: 1rem;
+}
+
+.weatherDetails {
+  border-radius: 12px;
+  background: #24343d;
+  display: flex;
+  padding: 9px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+}
+
+.weatherDetails .temperature {
+  border-radius: 15px;
+  border: 0.1px solid #727070;
+  background: rgba(31, 45, 52, 0.43);
+  padding: 10px 20px;
+}
+
+.weatherCard {
+  margin: auto;
+  margin-top: 5rem;
+  width: 20rem;
+  border-radius: 20px;
+  box-shadow: 10px 9px 70px 0px rgba(36, 53, 62, 0.4);
+  background: url(./assets/WeatherCardFilter.svg) no-repeat #24353e;
+  background-position: -40px -100px;
+}
+
+.weatherCardLogo {
+  position: relative;
+}
+
+.cityName {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cityTemp {
+  font-weight: 200;
+}
+
+.details {
+  font-weight: 400;
+  line-height: 2.4;
+}
